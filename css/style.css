@@ -265,7 +265,7 @@ a single introductory section */
   .hero__social {
     width: 40px;
     height: 40px;
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   .hero__social-list li:not(:last-of-type) {
     margin-right: 16px;
