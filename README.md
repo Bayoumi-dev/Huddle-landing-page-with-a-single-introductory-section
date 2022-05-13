@@ -15,7 +15,6 @@ This is a solution to the [Huddle landing page with a single introductory sectio
 
 ![Huddle landing page with a single introductory section](https://github.com/Bayoumi-dev/Huddle-landing-page-with-a-single-introductory-section/blob/master/design/desktop-design.jpg)
 
-![Huddle landing page with a single introductory section (Mobile)](https://github.com/Bayoumi-dev/Huddle-landing-page-with-a-single-introductory-section/blob/master/design/mobile-design.jpg)
 
 ## ⚙ Built with
 
