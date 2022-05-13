@@ -1,0 +1,51 @@
+/* Google Font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Variables */
+:root {
+  /* Colors - Primary */
+  /* Colors - Neutral */
+  /* Fonts */
+  --fonts-main: "Open Sans", sans-serif;
+  --fonts-hd: "Poppins", sans-serif;
+}
+/* Global Rules  */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--fonts-main);
+  cursor: default;
+}
+h1,
+a {
+  font-family: var(--fonts-hd);
+}
+
+/* Reset Some Elements */
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+button {
+  color: inherit;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
