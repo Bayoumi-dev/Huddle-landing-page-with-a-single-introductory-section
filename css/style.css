@@ -7,7 +7,8 @@
 /* Variables */
 :root {
   /* Colors - Primary */
-  /* Colors - Neutral */
+  --colors-violet: hsl(257, 40%, 49%);
+  --colors-soft-magenta: hsl(300, 69%, 71%);
   /* Fonts */
   --fonts-main: "Open Sans", sans-serif;
   --fonts-hd: "Poppins", sans-serif;
@@ -48,4 +49,230 @@ button {
   outline: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+/* Container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 374px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 374px) {
+  .container {
+    width: 100%;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1110px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+/* Huddle landing page with 
+a single introductory section */
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__container {
+}
+.header__logo {
+  width: 120px;
+  margin-top: 40px;
+}
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 992px) {
+  .header__logo {
+    width: 200px;
+    margin-top: 64px;
+  }
+}
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  background-color: var(--colors-violet);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero__container {
+  padding-top: 127px;
+  padding-bottom: 40px;
+}
+@media (max-width: 1440px) {
+  .hero__container {
+    min-height: inherit;
+  }
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+}
+.hero__img-wrapper {
+  max-width: 430px;
+}
+.hero__img-wrapper img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hero__desc {
+  max-width: 470px;
+  margin-top: 60px;
+  color: white;
+  text-align: center;
+}
+.hero__desc p {
+  line-height: 1.5;
+  margin: 16px auto 24px;
+}
+.hero__register {
+  width: 200px;
+  height: 40px;
+  font-size: 0.75rem;
+  margin: auto;
+  color: var(--colors-violet);
+  background-color: white;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+  border-radius: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hero__register:hover {
+  background-color: var(--colors-soft-magenta);
+  color: white;
+}
+.hero__register,
+.hero__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Social */
+.hero__social-list {
+  display: flex;
+  width: fit-content;
+  margin: 64px auto auto;
+}
+.hero__social {
+  width: 28px;
+  height: 28px;
+  color: white;
+  font-size: 0.875rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hero__social-list li:not(:last-of-type) {
+  margin-right: 10px;
+}
+.hero__social:hover {
+  color: var(--colors-soft-magenta);
+  border-color: var(--colors-soft-magenta);
+}
+@media (min-width: 576px) {
+  .hero__desc h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .hero {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: auto 100%;
+  }
+  .hero__container {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .hero__img-wrapper {
+    max-width: 100%;
+  }
+  .hero__content {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 60px;
+  }
+  .hero__desc {
+    margin-top: 32px;
+    text-align: start;
+  }
+  .hero__desc p {
+    font-size: 1.125rem;
+    margin: 24px auto 24px;
+  }
+  .hero__register {
+    height: 56px;
+    font-size: 1.125rem;
+    margin: 0;
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+  }
+  .hero__social {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .hero__social-list li:not(:last-of-type) {
+    margin-right: 16px;
+  }
+  .hero__social-list {
+    margin: 26px 0 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__desc {
+    max-width: 520px;
+  }
 }
