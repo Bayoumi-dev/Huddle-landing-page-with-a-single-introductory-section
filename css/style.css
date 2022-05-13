@@ -256,6 +256,7 @@ a single introductory section */
     height: 56px;
     font-size: 1.125rem;
     margin: 0;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
     border-radius: 28px;
     -webkit-border-radius: 28px;
     -moz-border-radius: 28px;
