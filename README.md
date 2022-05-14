@@ -20,6 +20,7 @@ This is a solution to the [Huddle landing page with a single introductory sectio
 
 - HTML
 - CSS
+- Fontawesome lib
 - Mobile-first workflow
 
 ## Author
